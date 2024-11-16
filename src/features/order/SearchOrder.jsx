@@ -9,7 +9,7 @@ export default function SearchOrder() {
   function handleSumit(e) {
     e.preventDefault();
     if (!query) return;
-    navigate(`/order/q${query}`);
+    navigate(`/order/${query}`);
     setQuery('');
   }
 
