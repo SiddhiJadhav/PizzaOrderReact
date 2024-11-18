@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function Button({ disabled, children, to, type }) {
+export default function Button({ disabled, children, to, type, onClick }) {
   const base =
     ' text-stone-800 text-sm bg-yellow-400 font-semibold  tracking-wide rounded-full inline-block hover:bg-yellow-300 uppercase focus:outline-none focus:bg-yellow-300 disabled:cursor-not-allowed transition-all duration-300';
 
@@ -20,7 +20,7 @@ export default function Button({ disabled, children, to, type }) {
     );
 
   return (
-    <button className={style[type]} disabled={disabled}>
+    <button className={style[type]} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
