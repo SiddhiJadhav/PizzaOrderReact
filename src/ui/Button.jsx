@@ -6,7 +6,7 @@ export default function Button({ disabled, children, to, type, onClick }) {
 
   const style = {
     primary: base + ' px-4 py-3',
-    small: base + ' px-4 py-2 text-xs',
+    small: base + ' px-4 py-2 text-xs text-nowrap',
     secondary:
       base +
       ' px-4 py-3 bg-transparent hover:bg-stone-200 focus:outline-none focus:bg-stone-300 text-sm',

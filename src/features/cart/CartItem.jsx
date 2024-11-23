@@ -24,6 +24,7 @@ function CartItem({ item, showDelete }) {
       </p>
       <div className="flex items-center justify-between sm:gap-6">
         <p className="text-sm font-semibold">{formatCurrency(totalPrice)}</p>
+
         <div className="flex gap-2 items-center justify-between">
           <Button type="small" onClick={handleRemoveQuantity}>
             -
